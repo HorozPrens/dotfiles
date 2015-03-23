@@ -2,3 +2,5 @@
 !.gitignore
 !.vimrc
 !.emacs
+.vim/bundle/*
+
