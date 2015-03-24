@@ -29,7 +29,8 @@ let g:ctrlp_custom_ignore = {
 	\ 'file': '\v\.(exe|so|dll)$',
 	\ }
 
-if has("gui_macvim")
-	let mapleader="e"
-	:nnoremap <leader>v :vsplit $MYVIMRC<cr>
-endif
+let mapleader="-"
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+noremap <c-x><c-s> <c-c>:w<cr>a
+nnoremap <leader>sv  :source $MYVIMRC<cr>
+iabbrev @@ cihangirzengin@gmail.com
