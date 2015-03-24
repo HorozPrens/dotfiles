@@ -1,6 +1,11 @@
 execute pathogen#infect()
+call pathogen#helptags()
 syntax on
 filetype plugin indent on
+filetype indent on 
+filetype plugin on 
+
+set shiftwidth=2 
 
 inoremap jj <Esc>   """ jj key is <Esc> setting
 if has("gui_running")
@@ -9,7 +14,7 @@ if has("gui_running")
   elseif has("gui_macvim")
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h17
   elseif has("gui_win32")
-    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h14
+    set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h13
   endif
 endif
 set encoding=utf-8
@@ -22,7 +27,7 @@ let g:airline_theme = 'base16'
 let g:airline#extensions#tabline#enabled = 1
 let mapleader="n"
 noremap <leader>d :NERDTreeToggle<CR>
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+"set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 let g:ctrlp_custom_ignore = {
 	\ 'dir':  '\v[\/]\.(git|hg|svn)$|node_modules|bower_components',
@@ -30,7 +35,20 @@ let g:ctrlp_custom_ignore = {
 	\ }
 
 let mapleader="-"
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-noremap <c-x><c-s> <c-c>:w<cr>a
+noremap <leader>ev :e ~/.vimrc<cr>
+nnoremap <silent> <c-x><c-s> <c-c>:w<cr>
 nnoremap <leader>sv  :source $MYVIMRC<cr>
-iabbrev @@ cihangirzengin@gmail.com
+cd d:\go\src\bitbucket.org\cihangiray\notx
+nmap <silent> <Leader>ig <Plug>IndentGuidesToggle  
+
+let mapleader=","
+nnoremap <leader>b :CtrlPBuffer <cr>
+nmap <F2> :!start explorer /e,%:p:h <cr>
+set omnifunc=syntaxcomplete#Complete " override built-in C omnicomplete with C++ OmniCppComplete plugin
+let OmniCpp_GlobalScopeSearch   = 1
+let OmniCpp_DisplayMode         = 1
+let OmniCpp_ShowScopeInAbbr     = 0 "do not show namespace in pop-up
+let OmniCpp_ShowPrototypeInAbbr = 1 "show prototype in pop-up
+let OmniCpp_ShowAccess          = 1 "show access in pop-up
+let OmniCpp_SelectFirstItem     = 1 "select first item in pop-up
+set completeopt=menuone,menu,longest
