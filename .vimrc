@@ -44,11 +44,8 @@ nmap <silent> <Leader>ig <Plug>IndentGuidesToggle
 let mapleader=","
 nnoremap <leader>b :CtrlPBuffer <cr>
 nmap <F2> :!start explorer /e,%:p:h <cr>
-set omnifunc=syntaxcomplete#Complete " override built-in C omnicomplete with C++ OmniCppComplete plugin
-let OmniCpp_GlobalScopeSearch   = 1
-let OmniCpp_DisplayMode         = 1
-let OmniCpp_ShowScopeInAbbr     = 0 "do not show namespace in pop-up
-let OmniCpp_ShowPrototypeInAbbr = 1 "show prototype in pop-up
-let OmniCpp_ShowAccess          = 1 "show access in pop-up
-let OmniCpp_SelectFirstItem     = 1 "select first item in pop-up
-set completeopt=menuone,menu,longest
+"let g:ycm_server_keep_logfiles = 1
+"let g:ycm_server_log_level = 'debug'
+"let g:ycm_warning_symbol = '.'
+"let g:ycm_error_symbol = '..'
+"let g:ycm_server_use_vim_stdout = 1
