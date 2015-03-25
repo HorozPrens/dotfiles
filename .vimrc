@@ -13,7 +13,9 @@ if has("gui_running")
     set guifont=Inconsolata\ 12
   elseif has("gui_macvim")
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h17
+    cd ~/projects/go/src/bitbucket.org/cihangiray/notx
   elseif has("gui_win32")
+    cd d:\go\src\bitbucket.org\cihangiray\notx
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h13
   endif
 endif
@@ -37,8 +39,8 @@ let g:ctrlp_custom_ignore = {
 let mapleader="-"
 noremap <leader>ev :e ~/.vimrc<cr>
 nnoremap <silent> <c-x><c-s> <c-c>:w<cr>
+
 nnoremap <leader>sv  :source $MYVIMRC<cr>
-cd d:\go\src\bitbucket.org\cihangiray\notx
 nmap <silent> <Leader>ig <Plug>IndentGuidesToggle  
 
 let mapleader=","
@@ -52,3 +54,10 @@ let OmniCpp_ShowPrototypeInAbbr = 1 "show prototype in pop-up
 let OmniCpp_ShowAccess          = 1 "show access in pop-up
 let OmniCpp_SelectFirstItem     = 1 "select first item in pop-up
 set completeopt=menuone,menu,longest
+let g:html_indent_inctags = "html,body,head,tbody"
+let g:clang_user_options='|| exit 0'
+let g:clang_complete_auto = 1
+let g:clang_complete_copen = 1
+let g:clang_exec = '/usr/bin/clang' 
+let g:clang_user_options = '2> NUL || exit 0"'
+let g:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/'
