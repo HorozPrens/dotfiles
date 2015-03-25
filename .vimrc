@@ -2,10 +2,10 @@ execute pathogen#infect()
 call pathogen#helptags()
 syntax on
 filetype plugin indent on
-filetype indent on 
-filetype plugin on 
+filetype indent on
+filetype plugin on
 
-set shiftwidth=2 
+set shiftwidth=2
 
 inoremap jj <Esc>   """ jj key is <Esc> setting
 if has("gui_running")
@@ -13,7 +13,9 @@ if has("gui_running")
     set guifont=Inconsolata\ 12
   elseif has("gui_macvim")
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h17
+    cd ~/projects/go/src/bitbucket.org/cihangiray/notx
   elseif has("gui_win32")
+    cd d:\go\src\bitbucket.org\cihangiray\notx
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h13
   endif
 endif
@@ -37,9 +39,9 @@ let g:ctrlp_custom_ignore = {
 let mapleader="-"
 noremap <leader>ev :e ~/.vimrc<cr>
 nnoremap <silent> <c-x><c-s> <c-c>:w<cr>
+
 nnoremap <leader>sv  :source $MYVIMRC<cr>
-cd d:\go\src\bitbucket.org\cihangiray\notx
-nmap <silent> <Leader>ig <Plug>IndentGuidesToggle  
+nmap <silent> <Leader>ig <Plug>IndentGuidesToggle
 
 let mapleader=","
 nnoremap <leader>b :CtrlPBuffer <cr>
