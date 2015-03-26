@@ -1,6 +1,3 @@
-let $MYVIMRC=/Users/cihangir/dotfiles/.vimrc
-set runtimepath=$HOME/dotfiles,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
-
 execute pathogen#infect()
 call pathogen#helptags()
 syntax on
