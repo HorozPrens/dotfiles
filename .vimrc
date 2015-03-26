@@ -13,9 +13,7 @@ if has("gui_running")
     set guifont=Inconsolata\ 12
   elseif has("gui_macvim")
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h17
-    cd ~/projects/go/src/bitbucket.org/cihangiray/notx
   elseif has("gui_win32")
-    cd d:\go\src\bitbucket.org\cihangiray\notx
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h13
   endif
 endif
