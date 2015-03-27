@@ -1,5 +1,3 @@
-set visualbell 
-set t_vb=
 set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
 set guioptions-=r  "remove right-hand scroll bar
@@ -35,4 +33,4 @@ if has("gui_running")
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline:h13
   endif
 endif
-
+let xml_use_xhtml=1
