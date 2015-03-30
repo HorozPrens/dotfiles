@@ -35,3 +35,6 @@
 [submodule "bundle/auto-pairs"]
 	path = bundle/auto-pairs
 	url = git@github.com:jiangmiao/auto-pairs.git
+[submodule "bundle/snipMate"]
+	path = bundle/snipMate
+	url = git@github.com:msanders/snipmate.vim.git
