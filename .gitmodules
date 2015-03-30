@@ -31,9 +31,7 @@
 [submodule "bundle/xml.vim"]
 	path = bundle/xml.vim
 	url = git@github.com:othree/xml.vim.git
-[submodule "bundle/javascript-libraries-syntax"]
-	path = bundle/javascript-libraries-syntax
-	url = git@github.com:othree/javascript-libraries-syntax.vim.git
+	ignore=dirty
 [submodule "bundle/auto-pairs"]
 	path = bundle/auto-pairs
 	url = git@github.com:jiangmiao/auto-pairs.git
