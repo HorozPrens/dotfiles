@@ -37,3 +37,4 @@ if has("gui_running")
 endif
 let xml_use_xhtml=1
 let g:used_javascript_libs = 'underscore,backbone,react,jquery'
+set incsearch
