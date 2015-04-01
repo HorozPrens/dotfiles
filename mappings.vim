@@ -21,3 +21,8 @@ nnoremap <leader>b :CtrlPBuffer <cr>
 noremap <leader>ev :e ~/dotfiles/.vimrc<cr>
 nnoremap <leader>sv  :source $MYVIMRC<cr>
 nmap <silent> <Leader>ig <Plug>IndentGuidesToggle
+
+imap ss <esc>a<Plug>snipMateNextOrTrigger
+smap ss <Plug>snipMateNextOrTrigger
+
+
