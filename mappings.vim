@@ -13,7 +13,7 @@ nnoremap <F5> :GundoToggle<CR>
 
 nmap <F2> :!start explorer /e,%:p:h <cr>
 
-inoremap jj <Esc>   """ jj key is <Esc> setting
+"inoremap jj <Esc>   """ jj key is <Esc> setting
 
 let mapleader=","
 noremap <leader>d :NERDTreeToggle<CR>
@@ -22,7 +22,8 @@ noremap <leader>ev :e ~/dotfiles/.vimrc<cr>
 nnoremap <leader>sv  :source $MYVIMRC<cr>
 nmap <silent> <Leader>ig <Plug>IndentGuidesToggle
 
-imap ss <esc>a<Plug>snipMateNextOrTrigger
-smap ss <Plug>snipMateNextOrTrigger
+nnoremap ;; A;<c-m><esc>
+inoremap ;; <esc>A;<c-m>
+
 
 

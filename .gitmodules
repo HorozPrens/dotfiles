@@ -35,21 +35,9 @@
 [submodule "bundle/auto-pairs"]
 	path = bundle/auto-pairs
 	url = git@github.com:jiangmiao/auto-pairs.git
-[submodule "bundle/snipMate"]
-	path = bundle/snipMate
-	url = git@github.com:msanders/snipmate.vim.git
 [submodule "bundle/tern_for_vim"]
 	path = bundle/tern_for_vim
 	url = git@github.com:marijnh/tern_for_vim.git
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
-[submodule "bundle/tlib"]
-	path = bundle/tlib
-	url = https://github.com/tomtom/tlib_vim.git
-[submodule "bundle/vim-addon-mw-utils"]
-	path = bundle/vim-addon-mw-utils
-	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
-[submodule "bundle/vim-snippets"]
-	path = bundle/vim-snippets
-	url = https://github.com/honza/vim-snippets.git

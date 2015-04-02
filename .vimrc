@@ -3,5 +3,11 @@ call pathogen#helptags()
 syntax on
 filetype plugin indent on
 
-source ~/dotfiles/mappings.vim 
-source ~/dotfiles/settings.vim 
+"source ~/vimfiles/mappings.vim 
+"source ~/vimfiles/settings.vim 
+"source ~/vimfiles/tab.vim 
+
+
+source ./mappings.vim 
+source ./settings.vim 
+source ~/vimfiles/tab.vim 
