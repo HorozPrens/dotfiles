@@ -34,7 +34,7 @@
 [submodule "bundle/xml.vim"]
 	path = bundle/xml.vim
 	url = git@github.com:othree/xml.vim.git
-	ignore=dirty
+	ignore = dirty
 [submodule "bundle/tern_for_vim"]
     path = bundle/tern_for_vim
 	url = git@github.com:marijnh/tern_for_vim.git
