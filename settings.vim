@@ -43,3 +43,6 @@ set shiftwidth=4
 set expandtab
 set completeopt=menuone
 
+if has("gui_win32")
+    let g:tagbar_ctags_bin = 'C:\ctags\ctags.exe'
+endif

@@ -11,14 +11,18 @@ nmap g<C-o> O<ESC>j
 
 nnoremap <F5> :GundoToggle<CR>
 
-nmap <F2> :!start explorer /e,%:p:h <cr>
+nmap <F2> :!start explorer /e,%:p:h<CR>
 
 "inoremap jj <Esc>   """ jj key is <Esc> setting
 
 let mapleader=","
 noremap <leader>d :NERDTreeToggle<CR>
-nnoremap <leader>b :CtrlPBuffer <cr>
-noremap <leader>ev :e ~/dotfiles/.vimrc<cr>
+nnoremap <leader>b :CtrlPBuffer<CR>
+nnoremap <leader>s :CtrlPLine<CR>
+nnoremap <leader>t :TagbarToggle<CR>
+nnoremap <leader>u :GundoToggle<CR>
+
+noremap <leader>ev :e ~/dotfiles/.vimrc<CR>
 nnoremap <leader>sv  :source $MYVIMRC<cr>
 nmap <silent> <Leader>ig <Plug>IndentGuidesToggle
 
