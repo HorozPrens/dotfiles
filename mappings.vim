@@ -29,5 +29,5 @@ nmap <silent> <Leader>ig <Plug>IndentGuidesToggle
 nnoremap ;; A;<c-m><esc>
 inoremap ;; <esc>A;<c-m>
 
-
+inoremap jk <esc>
 
