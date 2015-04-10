@@ -17,9 +17,13 @@ nmap <F2> :!start explorer /e,%:p:h<CR>
 
 let mapleader=","
 noremap <leader>d :NERDTreeToggle<CR>
+
+nnoremap <leader>f :CtrlP<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
 nnoremap <leader>s :CtrlPLine<CR>
+
 nnoremap <leader>t :TagbarToggle<CR>
+
 nnoremap <leader>u :GundoToggle<CR>
 
 noremap <leader>ev :e ~/dotfiles/.vimrc<CR>
@@ -30,4 +34,33 @@ nnoremap ;; A;<c-m><esc>
 inoremap ;; <esc>A;<c-m>
 
 inoremap jk <esc>
+inoremap <Ctrl-C> <Nop> 
 
+"nnoremap <leader>r :call RunCtagsCommand()<cr>
+
+:cnoremap <C-a>  <Home>
+:cnoremap <C-b>  <Left>
+:cnoremap <C-f>  <Right>
+:cnoremap <C-d>  <Delete>
+:cnoremap <M-b>  <S-Left>
+:cnoremap <M-f>  <S-Right>
+:cnoremap <M-d>  <S-right><Delete>
+:cnoremap <Esc>b <S-Left>
+:cnoremap <Esc>f <S-Right>
+:cnoremap <Esc>d <S-right><Delete>
+:cnoremap <C-g>  <C-c>
+
+" go lang mappings
+au FileType go nmap <leader>gr <Plug>(go-run)
+au FileType go nmap <leader>gb <Plug>(go-build)
+au FileType go nmap <leader>gt <Plug>(go-test)
+au FileType go nmap <leader>gc <Plug>(go-coverage)
+
+au FileType go nmap <Leader>ds <Plug>(go-def-split)
+au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
+au FileType go nmap <Leader>dt <Plug>(go-def-tab)
+au FileType go nmap <Leader>go <Plug>(go-doc)
+
+au FileType go nmap <Leader>gn <Plug>(go-rename)
+au FileType go nmap <Leader>gi <Plug>(go-info)
+au FileType go nmap <Leader>gm <Plug>(go-implements)

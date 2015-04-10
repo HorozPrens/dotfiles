@@ -10,7 +10,7 @@ set regexpengine=1
 syntax enable
 
 set encoding=utf-8
-set number
+"set number
 colorscheme corn
 set laststatus=2
 set t_Co=256
@@ -35,8 +35,10 @@ if has("gui_running")
 endif
 let xml_use_xhtml=1
 let g:used_javascript_libs = 'underscore,backbone,react,jquery'
-set incsearch
 
+set incsearch
+set ignorecase
+"set hlsearch
 
 set tabstop=4
 set shiftwidth=4
@@ -46,3 +48,5 @@ set completeopt=menuone
 if has("gui_win32")
     let g:tagbar_ctags_bin = 'C:\ctags\ctags.exe'
 endif
+
+"let g:go_fmt_command = "goimports"
