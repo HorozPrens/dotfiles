@@ -50,3 +50,6 @@
 [submodule "bundle/vim-go"]
 	path = bundle/vim-go
 	url = https://github.com/fatih/vim-go.git
+[submodule "bundle/splitjoin"]
+	path = bundle/splitjoin
+	url = git@github.com:AndrewRadev/splitjoin.vim.git

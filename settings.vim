@@ -11,11 +11,11 @@ syntax enable
 
 set encoding=utf-8
 "set number
-colorscheme corn
+colorscheme corn 
 set laststatus=2
 set t_Co=256
 let g:airline_powerline_fonts = 1
-let g:airline_theme = 'base16'
+let g:airline_theme = 'badwolf'
 let g:airline#extensions#tabline#enabled = 1
 
 let g:ctrlp_custom_ignore = {
@@ -50,3 +50,4 @@ if has("gui_win32")
 endif
 
 "let g:go_fmt_command = "goimports"
+
