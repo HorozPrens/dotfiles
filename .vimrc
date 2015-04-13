@@ -8,5 +8,5 @@ source ~/dotfiles/mappings.vim
 source ~/dotfiles/settings.vim 
 source ~/dotfiles/tab.vim 
 
-
+au GUIEnter * simalt ~x
 
