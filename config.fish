@@ -5,4 +5,4 @@ set -gx GOROOT /usr/local/go
 set -gx GOPATH ~/projects/go
 set -gx PATH $PATH $GOROOT/bin
 set -gx PATH $PATH $GOPATH/bin
-
+alias cnx "cd /Users/cihangir/projects/go/src/bitbucket.org/cihangiray/notx"

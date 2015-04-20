@@ -36,6 +36,7 @@ inoremap ;; <esc>A;<c-m>
 inoremap jk <esc>
 inoremap <Ctrl-C> <Nop> 
 
+inoremap {{ <esc>A{<c-m>}<esc><S-o>
 "nnoremap <leader>r :call RunCtagsCommand()<cr>
 
 :cnoremap <C-a>  <Home>
