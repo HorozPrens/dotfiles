@@ -32,6 +32,18 @@ nmap <silent> <Leader>ig <Plug>IndentGuidesToggle
 
 nnoremap ;; A;<c-m><esc>
 inoremap ;; <esc>A;<c-m>
+inoremap ,<Space> <esc>A,
+nnoremap ,<Space> <esc>A,<esc>
+
+inoremap {{ <esc>A{<c-m>}<esc><S-o>
+
+inoremap jk <esc>
+inoremap jj <esc>
+inoremap <Ctrl-C> <Nop> 
+
+"
+inoremap <leader>w <esc>:w<cr>i
+nnoremap <leader>w :w<cr>
 
 inoremap jk <esc>
 inoremap <Ctrl-C> <Nop> 
