@@ -30,19 +30,21 @@ noremap <leader>ev :e ~/dotfiles/.vimrc<CR>
 nnoremap <leader>sv  :source $MYVIMRC<cr>
 nmap <silent> <Leader>ig <Plug>IndentGuidesToggle
 
-nnoremap ;; A;<c-m><esc>
-inoremap ;; <esc>A;<c-m>
+"nnoremap ;; A;<c-m><esc>
+inoremap ;<Space> <esc>A;<esc>
 inoremap ,<Space> <esc>A,
 nnoremap ,<Space> <esc>A,<esc>
 
-inoremap {{ <esc>A{<c-m>}<esc><S-o>
+"inoremap {{ <esc>A{<c-m>}<esc><S-o>
+inoremap [<Space> <esc>A{<c-m>}<esc><S-o>
 
 inoremap jk <esc>
 inoremap jj <esc>
 inoremap <Ctrl-C> <Nop> 
 
 "
-inoremap <leader>w <esc>:w<cr>i
+"inoremap <leader>w <esc>:w<cr>i
+inoremap <leader>w <esc>:w<cr>
 nnoremap <leader>w :w<cr>
 
 inoremap jk <esc>
