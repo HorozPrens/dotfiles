@@ -51,6 +51,9 @@ inoremap <Ctrl-C> <Nop>
 inoremap {{ <esc>A{<c-m>}<esc><S-o>
 "nnoremap <leader>r :call RunCtagsCommand()<cr>
 
+nnoremap <leader>a :Ag<cr>
+
+
 :cnoremap <C-a>  <Home>
 :cnoremap <C-b>  <Left>
 :cnoremap <C-f>  <Right>
@@ -77,3 +80,4 @@ au FileType go nmap <Leader>go <Plug>(go-doc)
 au FileType go nmap <Leader>gn <Plug>(go-rename)
 au FileType go nmap <Leader>gi <Plug>(go-info)
 au FileType go nmap <Leader>gm <Plug>(go-implements)
+
