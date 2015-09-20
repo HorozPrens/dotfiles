@@ -31,9 +31,9 @@ nnoremap <leader>sv  :source $MYVIMRC<cr>
 nmap <silent> <Leader>ig <Plug>IndentGuidesToggle
 
 "nnoremap ;; A;<c-m><esc>
-inoremap ;<Space> <esc>A;<esc>
-inoremap ,<Space> <esc>A,
-nnoremap ,<Space> <esc>A,<esc>
+inoremap <Leader><Space> <esc>A;<esc>
+inoremap <Leader><Space> <esc>A,
+nnoremap <Leader><Space> <esc>A,<esc>
 
 "inoremap {{ <esc>A{<c-m>}<esc><S-o>
 inoremap [<Space> <esc>A{<c-m>}<esc><S-o>
@@ -67,7 +67,7 @@ nnoremap <leader>a :Ag<cr>
 :cnoremap <Esc>f <S-Right>
 :cnoremap <Esc>d <S-right><Delete>
 :cnoremap <C-g>  <C-c>
-
+      
 " go lang mappings
 au FileType go nmap <leader>gr <Plug>(go-run)
 au FileType go nmap <leader>gb <Plug>(go-build)

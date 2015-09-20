@@ -11,13 +11,15 @@ syntax enable
 
 set encoding=utf-8
 "set number
-colorscheme corn 
+"colorscheme corn 
+colorscheme apprentice 
 set laststatus=2
 set t_Co=256
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'badwolf'
 let g:airline#extensions#tabline#enabled = 1
-
+set nowrap 
+hi VertSplit       ctermfg=244 ctermbg=232   cterm=bold
 let g:ctrlp_custom_ignore = {
 	\ 'dir':  '\v[\/]\.(git|hg|svn)$|node_modules|bower_components',
 	\ 'file': '\v\.(exe|so|dll|o|obj|d|map)$',
