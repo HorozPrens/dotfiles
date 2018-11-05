@@ -1,0 +1,168 @@
+{
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
+    "terminal.integrated.shellArgs.windows": [
+        "/K",
+        "C:\\cmder_mini\\vscode.bat"
+    ],
+    "window.newWindowDimensions": "maximized",
+    "vim.useCtrlKeys": true,
+    "vim.leader": "<space>",
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "leader",
+                "n"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.nextEditor",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "b"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.previousEditor",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "f"
+            ],
+            "after": [
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.quickOpen",
+                    "args": []
+                }
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before" :[
+                "leader",
+                "r"
+            ],
+            "after":[],
+            "commands":[
+                {
+                    "command":"workbench.action.findInFiles"
+                }
+            ]
+
+        },
+        {
+            "before": [
+                "leader",
+                "h",
+                "i"
+            ],
+            "after":[],
+            "commands":[
+                {
+                    "command": "C_Cpp.SwitchHeaderSource"
+                }
+            ]
+        },
+         {
+            "before": [
+                "leader",
+                "h",
+                "a"
+            ],
+            "after": ["leader", "leader" , "leader" , "b" , "d" , "w"]
+        },
+        {
+            "before": [
+                "leader",
+                "s"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "q"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                },
+                {
+                    "command": "workbench.action.closeActiveEditor",
+                    "args": []
+                }
+            ]
+        },
+{
+            "before": [
+                "leader",
+                "k"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save",
+                    "args": []
+                },
+                {
+                    "command": "workbench.action.closeActiveEditor",
+                    "args": []
+                }
+            ]
+        }
+    ],
+    "files.encoding": "windows1254",
+    "cmake.configureOnOpen": true,
+    "window.zoomLevel": 0,
+    "terminal.integrated.rendererType": "dom",
+    "breadcrumbs.enabled": true,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.autoReveal": false,
+    "problems.autoReveal": false,
+    "workbench.editor.revealIfOpen": true,
+    "workbench.colorTheme": "tangotango",
+    "editor.fontWeight": "bold",
+    "editor.lineNumbers": "relative",
+    "vim.foldfix": true,
+    "vim.sneak": true,
+    "vim.sneakUseIgnorecaseAndSmartcase": true,
+    "java.home": "C:\\Program Files\\Java\\jdk1.8.0_151"
+}
