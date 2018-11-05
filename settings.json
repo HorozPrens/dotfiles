@@ -164,5 +164,18 @@
     "vim.foldfix": true,
     "vim.sneak": true,
     "vim.sneakUseIgnorecaseAndSmartcase": true,
-    "java.home": "C:\\Program Files\\Java\\jdk1.8.0_151"
+    "java.home": "C:\\Program Files\\Java\\jdk1.8.0_151",
+    "files.exclude": {
+        "**/.git": true,         // this is a default value
+        "**/.DS_Store": true,    // this is a default value
+
+        "**/node_modules": true, // this excludes all folders 
+                                 // named "node_modules" from 
+                                 // the explore tree
+
+        // alternative version
+        "node_modules": true    // this excludes the folder 
+                                // only from the root of
+                                // your workspace 
+    }
 }
