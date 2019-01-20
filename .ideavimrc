@@ -1,0 +1,78 @@
+set ignorecase
+set smartcase
+let mapleader = " "
+set scrolloff=3 " 3 lines above/below cursor when scrolling
+
+" Integrate with system clipboard
+set clipboard=unnamedplus,unnamed
+
+let mapleader = " "
+
+"
+set number
+set showmode
+
+imap jj <Esc>
+imap ,, <Esc>
+vmap ,, <Esc>
+
+nmap <leader>s :w<cr>
+
+set cursorline
+
+"incremental search
+set incsearch
+
+" Indent everything
+nnoremap <leader>i ggvG=
+
+nmap <leader>f :action GotoFile<CR>
+nmap <leader>c :action GotoClass<CR>
+
+" Reload .ideavimrc
+nnoremap <leader>l   :source ~/.ideavimrc<CR>
+nnoremap <leader>r   :action FindInPath<CR>
+"nnoremap <leader>q   :action CloseEditor<CR>
+nnoremap <leader>Q   :action CloseAllEditors<CR>
+nnoremap <leader>t   :action GotoTest<cr>
+nnoremap <leader>o   :action FileStructurePopup<Cr>
+"nmap <leader>b   :action RecentFiles<cr>
+nnoremap <leader>u   :action MethodUp<cr>
+nnoremap <leader>d   :action MethodDown<cr>
+nnoremap <leader>,   :e#<CR>
+nnoremap <leader>\   :action SplitVertically<CR>
+nnoremap <leader>-   :action SplitHorizontally<CR>
+nnoremap <leader>0   :action Unsplit<CR>
+nnoremap <leader>G   :action Generate<CR>
+
+"bookmarks
+nnoremap <leader>bt   :action ToggleBookmark<CR>
+nnoremap <leader>bn   :action GotoNextBookmark<CR>
+nnoremap <leader>bp   :action GotoPreviousBookmark<CR>
+nnoremap <leader>bl   :action ShowBookmarks<CR>
+
+"navigation
+nnoremap <m-o> :action Back<CR>
+
+
+"windows
+nnoremap <leader>wb   :action ActivateBuildToolWindow<CR>
+
+"file operations
+nnoremap <leader>q   :action VimFileSaveClose<CR>
+
+
+
+"tab navigation
+nnoremap gh gT
+nnoremap gl gt
+
+"window management
+" enter newlines
+nnoremap <c-m> :action EditorEnter<CR>
+inoremap <c-m> <C-o>:action EditorEnter<CR>
+
+
+
+
+
