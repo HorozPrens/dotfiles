@@ -90,14 +90,14 @@ Each entry is either:
       (add-hook 'irony-mode-hook 'company-irony-setup-begin-commands)
       (add-hook 'irony-mode-hook 'company-mode))))
 
-;; (defun irony-mode/init-flycheck-irony ()
-;;   (use-package flycheck-irony
-;;     ;; :defer t                            ; fix this ???
-;;     :init
-;;     (progn
-;;       (eval-after-load 'flycheck
-;;         '(add-to-list 'flycheck-checkers 'irony))
-;;       (add-hook 'irony-mode-hook 'flycheck-mode))))
+(defun irony-mode/init-flycheck-irony ()
+  (use-package flycheck-irony
+    ;; :defer t                            ; fix this ???
+    :init
+    (progn
+      (eval-after-load 'flycheck
+        '(add-to-list 'flycheck-checkers 'irony))
+      (add-hook 'irony-mode-hook 'flycheck-mode))))
 
 ;;; packages.el ends here
 
