@@ -158,8 +158,6 @@
     "explorer.autoReveal": false,
     "problems.autoReveal": false,
     "workbench.editor.revealIfOpen": true,
-    "workbench.colorTheme": "tangotango",
-    "editor.fontWeight": "bold",
     "editor.lineNumbers": "relative",
     "vim.foldfix": true,
     "vim.sneak": true,
@@ -177,5 +175,9 @@
         "node_modules": true    // this excludes the folder 
                                 // only from the root of
                                 // your workspace 
-    }
-}
+    },
+    "editor.fontSize": 14,
+    "workbench.colorCustomizations": {
+    },
+    "cmake-tools-helper.cmake_download_path": "/Users/cihangir/.vscode/extensions/maddouri.cmake-tools-helper-0.2.1/cmake_download"
+} 

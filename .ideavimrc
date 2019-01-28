@@ -13,6 +13,8 @@ set number
 set showmode
 
 imap jj <Esc>
+set timeoutlen=1000
+
 imap ,, <Esc>
 vmap ,, <Esc>
 
