@@ -66,13 +66,6 @@ Each entry is either:
 (defun irony-mode/init-irony ()
   (use-package irony
     :defer t
-    :bind( :map company-active-map
-                ([tab] . company-complete-selection)
-                ("M-m" . company-complete-selection)
-                ("C-j" . company-select-next)
-                ("M-j" . company-select-next)
-                ("C-k" . company-select-previous)
-                ("M-k" . company-select-previous))
     :init
     (progn
       (add-hook 'c++-mode-hook 'irony-mode)

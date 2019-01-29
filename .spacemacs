@@ -53,7 +53,9 @@ values."
      ;; version-control
      irony-mode
      themes-megapack
-     ace-jump-mode)
+     ace-jump-mode
+     helm-gtags
+     )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
@@ -351,7 +353,23 @@ you should place your code here."
     (define-key helm-projectile-projects-map (kbd "M-g") 'helm-keyboard-quit)
     (define-key helm-projectile-projects-map (kbd "M-m") 'helm-maybe-exit-minibuffer))
 
+  (when *is-a-windows*
+    (message "cihangir - pipedelay is set")
+    (when (boundp 'w32-pipe-read-delay)
+      (setq w32-pipe-read-delay 0))
+    (when (boundp 'w32-pipe-buffer-size)
+      (setq irony-server-w32-pipe-buffer-size (* 64 1024))))
 
+  (with-eval-after-load 'company
+    (define-key company-active-map (kbd "TAB") 'company-complete-selection)
+    (define-key company-active-map (kbd "M-m") 'company-complete-selection)
+    (define-key company-active-map (kbd "C-j") 'company-select-next)
+    (define-key company-active-map (kbd "M-j") 'company-select-next)
+    (define-key company-active-map (kbd "C-k") 'company-select-previous)
+    (define-key company-active-map (kbd "M-k") 'company-select-previous)
+
+    
+    )
   (with-eval-after-load 'helm
     (message "cihangir")
 
