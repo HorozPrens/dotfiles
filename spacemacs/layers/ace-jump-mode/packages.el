@@ -60,7 +60,7 @@ Each entry is either:
 
 (defun ace-jump-mode/init-ace-jump-mode ()
   (use-package ace-jump-mode
-    :defer t
+    ;;:defer t
     :ensure t
     :config
     (evil-leader/set-key "h a" 'ace-jump-mode)))

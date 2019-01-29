@@ -340,6 +340,9 @@ you should place your code here."
   (with-eval-after-load 'evil
     (define-key evil-normal-state-map "q" 'kill-buffer-and-window))
 
+  (setq-default evil-escape-key-sequence "jj")
+  (setq-default evil-escape-delay 0.2)
+
   (with-eval-after-load 'helm-projectile
 
     (define-key helm-projectile-find-file-map (kbd "M-g") 'helm-keyboard-quit)
@@ -366,6 +369,10 @@ you should place your code here."
   (define-key spacemacs-buffer-mode-map (kbd "M-m") 'widget-button-press)
   (define-key minibuffer-local-map (kbd "M-m") #'exit-minibuffer)
 
+  ;;mode line settings
+  (line-number-mode t)
+  (column-number-mode t)
+  (size-indication-mode t)
 
   (setq yas-snippet-dirs
         '("~/dotfiles/snippets"))
