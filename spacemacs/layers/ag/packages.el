@@ -60,7 +60,7 @@ Each entry is either:
 
 (defun ag/init-ag ()
   (use-package ag
-    :ensure t :ensure projectile
+    :ensure t ;;:ensure projectile
     :init ;;(use-package wgrep
             ;;:config
             (progn
