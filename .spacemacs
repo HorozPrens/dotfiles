@@ -351,10 +351,44 @@ you should place your code here."
                            (t
                             "[no file]")))))
 
-  (require 'yasnippet)
-  (setq yas-snippet-dirs
-         '("~/dotfiles/snippets"))
-  (yas-global-mode 1)
+  ;; (require 'yasnippet)
+  ;; (setq yas-snippet-dirs
+  ;;        '("~/dotfiles/snippets"))
+  ;;(yas-global-mode 1)
+
+  (use-package emmet-mode
+    :defer t
+    :init
+    (add-hook 'css-mode-hook 'emmet-mode)
+    (add-hook 'sgml-mode-hook 'emmet-mode)
+    :config
+    (setq-default emmet-move-cursor-between-quote t)
+    (unbind-key "<C-return>" emmet-mode-keymap)
+    (unbind-key "C-M-<left>" emmet-mode-keymap)
+    (unbind-key "C-M-<right>" emmet-mode-keymap))
+
+  (use-package hippie-exp
+    :ensure nil
+    :defer t
+    :bind ("<M-return>" . hippie-expand)
+    :config
+    (setq-default hippie-expand-try-functions-list
+                  '(yas-hippie-try-expand emmet-expand-line)))
+
+  (use-package yasnippet
+    :defer t
+    :init
+    (add-hook 'js-mode-hook 'yas-minor-mode)
+    (add-hook 'sgml-mode-hook 'yas-minor-mode)
+    :config
+    (setq-default yas-snippet-dirs '("~/dotfiles/snippets"))
+    (yas-reload-all)
+    (unbind-key "TAB" yas-minor-mode-map)
+    (unbind-key "<tab>" yas-minor-mode-map))
+
+
+
+
 
   (add-to-list 'auto-mode-alist '("\\.css$" . html-mode))
   (add-to-list 'auto-mode-alist '("\\.html$" . html-mode))
