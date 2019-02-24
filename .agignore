@@ -1,3 +1,4 @@
 tags
 *.map
 *.zgn
+/temp

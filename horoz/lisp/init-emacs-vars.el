@@ -1,3 +1,4 @@
+
 (setq buffer-save-without-query t)
 (fset 'yes-or-no-p 'y-or-n-p)
 (global-auto-revert-mode t)

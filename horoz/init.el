@@ -6,7 +6,10 @@
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 (package-initialize)
-
 (require 'package)
 
-(org-babel-load-file "~/dotfiles/horoz/horoz.org") 
+(defvar  dotfiles-horoz-dir "~/dotfiles/horoz")
+(add-to-list 'load-path (expand-file-name "lisp" dotfiles-horoz-dir))
+
+(require 'config)
+
