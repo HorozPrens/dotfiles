@@ -1,6 +1,8 @@
 
-
 (require-package 'yasnippet)
+(require 'yasnippet)
+
+(setq-default yas-snippet-dirs '("~/dotfiles/snippets"))
 
 (yas-global-mode 1)
 
@@ -9,7 +11,12 @@
                 (when (eql major-mode 'snippet-mode)
                   (yas-reload-all))))
 
+
+
+
 (add-auto-mode 'snippet-mode "\\.yasnippet")
+
+
 
 (when (maybe-require-package 'company)
   ;; Add yasnippet support for all company backends

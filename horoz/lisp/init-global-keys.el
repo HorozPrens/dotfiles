@@ -1,37 +1,38 @@
 (evil-leader/set-key
-       "SPC" 'helm-M-x
-       "f" 'helm-projectile-find-file
-       "a" 'ace-jump-mode
-       "e" 'eshell
-       "c" 'open-config-org
-       "i" 'open-init-el
-       "r" 'ag-project
-       "s" 'save-all-buffers
-       "d" 'dired-jump
-       "D" 'dired-jump-other-window
-       "n" 'neotree-project-root-dir-or-current-dir
-       "q" 'kill-this-buffer-and-window
-       "o" 'other-window
-       "0" 'delete-window
-       "1" 'delete-other-windows
-       "2" 'split-window-below
-       "3" 'split-window-right
-       "b" 'switch-to-buffer
-       "t" 'hs-toggle-hiding
-       "mm" 'compile
-       "mn" 'my-nexterrorloop
-       "w" 'switch-window
-       "h i" 'ff-find-other-file
-       "h v" 'describe-variable
-       "h f" 'describe-function
-       "h k" 'describe-key
-       ";" 'comment-line
-       "p p" 'helm-projectile-switch-project
-       "x c" 'save-buffers-kill-terminal
-       "g p" 'go-set-project
-       "g r" 'go-run
-       "l a" 'helm-all-mark-rings
-       "k" 'kill-this-buffer)
+  "SPC" 'helm-M-x
+  "f" 'helm-projectile-find-file
+  "a" 'ace-jump-mode
+  "e" 'eshell
+  "c" 'open-config-el
+  "i" 'open-init-el
+  ;;"r" 'ag-project
+  "s" 'save-all-buffers
+  "d" 'dired-jump
+  "D" 'dired-jump-other-window
+  "n" 'neotree-toggle
+  "q" 'kill-this-buffer-and-window
+  "o" 'other-window
+  "0" 'delete-window
+  "1" 'delete-other-windows
+  "2" 'split-window-below
+  "3" 'split-window-right
+  "b" 'switch-to-buffer
+  "t" 'hs-toggle-hiding
+  "mm" 'compile
+  "mn" 'my-nexterrorloop
+  "w" 'switch-window
+  "h i" 'ff-find-other-file
+  "h v" 'describe-variable
+  "h f" 'describe-function
+  ;;  "h k" 'describe-key
+  ";" 'comment-line
+  "p p" 'helm-projectile-switch-project
+  "x c" 'save-buffers-kill-terminal
+  "g p" 'go-set-project
+  "g r" 'go-run
+  "l a" 'helm-all-mark-rings
+  "k" 'kill-this-buffer)
+
 
 (define-key evil-normal-state-map [escape] 'keyboard-quit)
 (define-key evil-normal-state-map [escape] 'keyboard-quit)
@@ -85,14 +86,41 @@
 ;;dired-mode-keys
 
 (add-hook 'dired-mode-hook 
-   (lambda ()
-(define-key dired-mode-map (kbd "M-m") 'dired-find-file)
-(define-key dired-mode-map "c" 'find-file) )) 
+	  (lambda ()
+	    (define-key dired-mode-map (kbd "M-m") 'dired-find-file)
+	    (define-key dired-mode-map "c" 'find-file) )) 
 
 ;;enter key
 (global-set-key (kbd "RET") 'newline-and-indent)
 
+(general-nmap
+  :prefix "SPC m"
+  "p" 'helm-mini)
 
+(general-nmap
+  :prefix "SPC h"
+  "f" 'describe-function
+  "k" 'describe-key
+  "d" 'describe-variable)
+
+(general-nmap
+  :prefix "SPC r"
+  "p" 'helm-do-ag-project-root)
+
+
+;;company key bindings
+(general-define-key
+ :keymaps 'company-mode-map
+ "M-/"  'company-complete) 
+
+(general-define-key
+ :keymaps 'company-active-map
+ "M-m"  'company-complete-selection
+ "M-k"  'company-select-previous
+ "M-j"  'company-select-next
+ "TAB"  'company-complete-selection) 
+
+(global-set-key (kbd "M-C-/") 'company-complete)
 
 
 (provide 'init-global-keys)

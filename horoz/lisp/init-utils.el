@@ -131,6 +131,10 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
                         (file-name-sans-extension rel)
                         ".html"))))
 
+(defun open-config-el ()
+  (interactive)
+  (find-file (expand-file-name  "config.el" config-lisp-dir)))
+
 (provide 'init-utils)
 ;;; init-utils.el ends here
 
