@@ -3,7 +3,6 @@
   "f" 'helm-projectile-find-file
   "a" 'ace-jump-mode
   "e" 'eshell
-  "c" 'open-config-el
   "i" 'open-init-el
   ;;"r" 'ag-project
   "s" 'save-all-buffers
@@ -80,11 +79,7 @@
 ;;helm-swoop
 (global-set-key (kbd "M-i") 'helm-swoop)
 
-;;ace jumo mode
-(evil-leader/set-key "g" ace-jump-mode)
-
 ;;dired-mode-keys
-
 (add-hook 'dired-mode-hook 
 	  (lambda ()
 	    (define-key dired-mode-map (kbd "M-m") 'dired-find-file)
@@ -92,6 +87,15 @@
 
 ;;enter key
 (global-set-key (kbd "RET") 'newline-and-indent)
+
+
+(general-nmap
+  :prefix "SPC"
+  "TAB" 'er-switch-to-previous-buffer
+  "." 'bs-cycle-next
+  "," 'bs-cycle-previous)
+
+
 
 (general-nmap
   :prefix "SPC m"
@@ -118,7 +122,7 @@
  "M-m"  'company-complete-selection
  "M-k"  'company-select-previous
  "M-j"  'company-select-next
- "TAB"  'company-complete-selection) 
+ "M-m"  'company-complete-selection) 
 
 (global-set-key (kbd "M-C-/") 'company-complete)
 

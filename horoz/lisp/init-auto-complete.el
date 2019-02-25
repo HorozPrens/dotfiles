@@ -19,4 +19,19 @@
 (ac-set-trigger-key "TAB")
 (ac-set-trigger-key "<tab>")
 
+
+;; (general-nmap
+;;   :keymaps 'ac-completing-map
+;;   "M-j" 'ac-next
+;;   "M-k" 'ac-previous
+  
+
+(general-define-key
+ :keymaps 'ac-completing-map
+ "M-j" 'ac-next
+ "M-k" 'ac-previous
+ "M-m"  'ac-complete) 
+
+
+
 (provide 'init-auto-complete)

@@ -107,7 +107,7 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 
 (defun open-init-el ()
   (interactive)
-  (find-file "~/.emacs.d/init.el"))
+  (find-file "~/dotfiles/horoz/init.el"))
 
 (setq org-publish-project-alist
       '(("org-notes"
@@ -134,6 +134,17 @@ then it takes a second \\[keyboard-quit] to abort the minibuffer."
 (defun open-config-el ()
   (interactive)
   (find-file (expand-file-name  "config.el" config-lisp-dir)))
+
+
+(defun er-switch-to-previous-buffer ()
+  "Switch to previously open buffer.
+Repeated invocations toggle between the two most recently open buffers."
+  (interactive)
+  (switch-to-buffer (other-buffer (current-buffer) 1)))
+
+
+
+
 
 (provide 'init-utils)
 ;;; init-utils.el ends here
