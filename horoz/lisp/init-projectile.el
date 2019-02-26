@@ -11,4 +11,14 @@
 (maybe-require-package 'ibuffer-projectile)
 (setq projectile-completion-system 'helm)
 
+
+(defun my-projectile-run-project (&optional prompt)
+  (interactive "P")
+  (let ((compilation-read-command
+         (or (not (projectile-run-command (projectile-compilation-dir)))
+             prompt)))
+    (projectile-run-project prompt)))
+
+(setq projectile-enable-caching t)
+
 (provide 'init-projectile)
