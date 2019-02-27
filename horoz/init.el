@@ -77,6 +77,8 @@
 (require 'init-sass-mode)
 (require 'init-cmake-ide)
 (require 'init-cmake-mode)
+;;(require 'init-gnu-global)
+(require 'init-helm-gtags-mode)
 
 (require 'init-global-keys)
 

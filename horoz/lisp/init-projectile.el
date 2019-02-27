@@ -6,7 +6,7 @@
 (setq-default projectile-mode-line-prefix " Proj")
 
 (evil-define-key 'normal projectile-mode-map (kbd "SPC p") 'projectile-command-map)
-
+(setq projectile-indexing-method 'native)
 
 (maybe-require-package 'ibuffer-projectile)
 (setq projectile-completion-system 'helm)
