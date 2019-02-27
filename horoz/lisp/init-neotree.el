@@ -5,6 +5,7 @@
 
 (require 'all-the-icons)
 
+(setq neo-theme (if (display-graphic-p) 'icons 'arrow))
 
 (defun neotree-project-root-dir-or-current-dir ()
   "Open NeoTree using the project root, using projectile, or the
