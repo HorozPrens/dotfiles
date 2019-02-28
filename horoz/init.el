@@ -79,6 +79,8 @@
 (require 'init-cmake-mode)
 ;;(require 'init-gnu-global)
 (require 'init-helm-gtags-mode)
+;;(require 'init-smartparens)
+(require 'init-c-mode)
 
 (require 'init-global-keys)
 
