@@ -5,7 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (helm-gtags rtags cmake-ide company-irony irony all-the-icons neotree org-bullets auto-complete spaceline web-mode tide ace-jump-mode company yasnippet expand-region switch-window dracula-theme helm-ag helm-swoop helm-projectile general projectile ibuffer-projectile evil scratch exec-path-from-shell fullframe seq smartparens use-package company-quickhelp aggressive-indent helm evil-leader)))
+    (helm-gtags company-irony irony all-the-icons neotree org-bullets auto-complete spaceline web-mode tide ace-jump-mode company yasnippet expand-region switch-window dracula-theme helm-ag helm-swoop helm-projectile general projectile ibuffer-projectile evil scratch exec-path-from-shell fullframe seq rtags cmake-ide smartparens use-package company-quickhelp aggressive-indent helm evil-leader)))
  '(safe-local-variable-values
    (quote
     ((eval setq cmake-ide-build-dir
