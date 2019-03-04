@@ -9,7 +9,7 @@
   "d" 'dired-jump
   "D" 'dired-jump-other-window
   "n" 'neotree-toggle
-  "q" 'kill-this-buffer-and-window
+  ;;"q" 'kill-this-buffer-and-window
   "o" 'other-window
   "0" 'delete-window
   "1" 'delete-other-windows
@@ -92,6 +92,7 @@
 (general-nmap
   :prefix "SPC"
   "TAB" 'er-switch-to-previous-buffer
+  "b" 'helm-buffer-list
   "." 'bs-cycle-next
   "," 'bs-cycle-previous)
 
@@ -126,6 +127,9 @@
 
 (global-set-key (kbd "M-C-/") 'company-complete)
 
+(general-define-key
+ :states 'normal
+ "q" 'kill-this-buffer-and-window)
 
 
 (provide 'init-global-keys)

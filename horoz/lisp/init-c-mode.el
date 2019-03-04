@@ -15,8 +15,8 @@ Threat is as function body when from endline before )"
   "Insert {}.
 Threat is as function body when from endline before )"
   (interactive)
-  (insert "(  )")
-  (backward-char)
+  (insert "( )")
+  ;; (backward-char)
   (backward-char))
 
 
@@ -26,7 +26,8 @@ Threat is as function body when from endline before )"
       (progn
 	(search-forward-regexp  "\\s-*\)")
 	;; (forward-char 1)
-	)))
+	)
+    (insert ")")))
 
 
 
