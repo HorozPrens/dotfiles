@@ -81,6 +81,7 @@
 (require 'init-helm-gtags-mode)
 ;;(require 'init-smartparens)
 (require 'init-c-mode)
+(require 'init-lorem-ipsum)
 
 (require 'init-global-keys)
 
