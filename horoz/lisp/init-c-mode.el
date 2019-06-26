@@ -31,14 +31,12 @@ Threat is as function body when from endline before )"
 
 
 
-
 (add-hook 'c-mode-common-hook 'my-c-common-hook)
 
 (defun my-c-common-hook ()
   (define-key c-mode-base-map "{" 'ins-c++-curly)
   (define-key c-mode-base-map "(" 'ins-c++-curvy)
-  (define-key c-mode-base-map ")" 'close-c++-curvy)
-  )
+  (define-key c-mode-base-map ")" 'close-c++-curvy))
 
 
 

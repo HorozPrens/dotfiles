@@ -1,7 +1,7 @@
 ;;(require-package 'ggtags)
 
 (add-hook 'c-mode-hook '(lambda ()
-                          (gtags-mode t)
+                          ;; (gtags-mode t)
 			  (cond (*is-a-windows*
 				 (lambda () (
 					     (setq gtags-global-command "c:/bin/glo663wb/bin/global.exe")

@@ -110,6 +110,7 @@
 
 (general-nmap
   :prefix "SPC r"
+  "a" 'ag-project-at-point
   "p" 'helm-do-ag-project-root)
 
 
