@@ -15,7 +15,7 @@ Threat is as function body when from endline before )"
   "Insert {}.
 Threat is as function body when from endline before )"
   (interactive)
-  (insert "( )")
+  (insert "()")
   ;; (backward-char)
   (backward-char))
 
@@ -38,6 +38,9 @@ Threat is as function body when from endline before )"
   (define-key c-mode-base-map "(" 'ins-c++-curvy)
   (define-key c-mode-base-map ")" 'close-c++-curvy))
 
-
+(eval-after-load 'cc-mode
+  '(progn
+     (define-key c-mode-base-map "/" 'self-insert-command)
+     (define-key c-mode-base-map "*" 'self-insert-command)))
 
 (provide 'init-c-mode)

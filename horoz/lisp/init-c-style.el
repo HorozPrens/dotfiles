@@ -23,8 +23,8 @@
 (c-add-style "PERSONAL" my-c-style)
 
 (defun my-c-mode-common-hook ()
-  ;;(c-set-style "PERSONAL")
-  (c-set-style "gnu")
+  (c-set-style "PERSONAL")
+  ;; (c-set-style "gnu")
   (setq tab-width 2 indent-tabs-mode nil)
   (c-toggle-auto-newline -1)
   (local-unset-key "\C-c\C-c")
