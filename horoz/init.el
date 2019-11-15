@@ -82,6 +82,7 @@
 ;;(require 'init-smartparens)
 (require 'init-c-mode)
 (require 'init-lorem-ipsum)
+(require 'init-rjsx-mode)
 
 (require 'init-global-keys)
 

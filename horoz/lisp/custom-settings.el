@@ -5,10 +5,10 @@
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
    (quote
-    ("151bde695af0b0e69c3846500f58d9a0ca8cb2d447da68d7fbf4154dcf818ebc" "713f898dd8c881c139b62cf05b7ac476d05735825d49006255c0a31f9a4f46ab" "a8c210aa94c4eae642a34aaf1c5c0552855dfca2153fa6dd23f3031ce19453d4" default)))
+    ("10461a3c8ca61c52dfbbdedd974319b7f7fd720b091996481c8fb1dded6c6116" "151bde695af0b0e69c3846500f58d9a0ca8cb2d447da68d7fbf4154dcf818ebc" "713f898dd8c881c139b62cf05b7ac476d05735825d49006255c0a31f9a4f46ab" "a8c210aa94c4eae642a34aaf1c5c0552855dfca2153fa6dd23f3031ce19453d4" default)))
  '(package-selected-packages
    (quote
-    (helm-gtags company-irony irony all-the-icons neotree org-bullets auto-complete spaceline web-mode tide ace-jump-mode company yasnippet expand-region switch-window helm-ag helm-swoop helm-projectile general projectile ibuffer-projectile evil scratch exec-path-from-shell fullframe seq doom-themes dracula-theme rtags cmake-ide smartparens use-package company-quickhelp aggressive-indent helm evil-leader)))
+    (helm-gtags company-irony irony all-the-icons neotree org-bullets auto-complete spaceline web-mode tide ace-jump-mode company yasnippet expand-region switch-window helm-ag helm-swoop helm-projectile general projectile ibuffer-projectile evil scratch exec-path-from-shell fullframe seq rjsx-mode doom-themes dracula-theme rtags cmake-ide smartparens use-package company-quickhelp aggressive-indent helm evil-leader)))
  '(projectile-globally-ignored-directories
    (quote
     (".idea" ".ensime_cache" ".eunit" ".git" ".hg" ".fslckout" "_FOSSIL_" ".bzr" "_darcs" ".tox" ".svn" ".stack-work" "node_modules" "dist" "build")))
