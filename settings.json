@@ -1,15 +1,15 @@
+// Place your key bindings in this file to overwrite the defaults
 {
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\cmd.exe",
-    "terminal.integrated.shellArgs.windows": [
-        "/K",
-        "C:\\cmder_mini\\vscode.bat"
-    ],
     "window.newWindowDimensions": "maximized",
     "vim.useCtrlKeys": true,
     "vim.leader": "<space>",
     "vim.easymotion": true,
     "vim.incsearch": true,
     "vim.hlsearch": true,
+    "vim.surround": true,
+    "vim.camelCaseMotion.enable": true,
+    "vim.statusBarColorControl": true,
+
     "vim.insertModeKeyBindings": [
         {
             "before": [
@@ -20,6 +20,24 @@
                 "<Esc>"
             ]
         }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
     ],
     "vim.normalModeKeyBindings": [
         {
@@ -38,7 +56,7 @@
         {
             "before": [
                 "leader",
-                "b"
+                "p"
             ],
             "after": [],
             "commands": [
@@ -61,21 +79,41 @@
                     "args": []
                 }
             ]
+        },
+        {
+            "before": [
+                "leader",
+                "a"
+            ],
+            "after": [
+            ],
+            "commands": [
+                {
+                    "command": "extension.aceJump",
+                    "args": []
+                }
+            ]
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before" :[
+            "before": [
+                ":"
+            ],
+            "commands": [
+                "workbench.action.showCommands",
+            ]
+        },
+        {
+            "before": [
                 "leader",
                 "r"
             ],
-            "after":[],
-            "commands":[
+            "commands": [
                 {
-                    "command":"workbench.action.findInFiles"
+                    "command": "workbench.action.findInFiles"
                 }
             ]
-
         },
         {
             "before": [
@@ -83,20 +121,27 @@
                 "h",
                 "i"
             ],
-            "after":[],
-            "commands":[
+            "after": [],
+            "commands": [
                 {
                     "command": "C_Cpp.SwitchHeaderSource"
                 }
             ]
         },
-         {
+        {
             "before": [
                 "leader",
                 "h",
                 "a"
             ],
-            "after": ["leader", "leader" , "leader" , "b" , "d" , "w"]
+            "after": [
+                "leader",
+                "leader",
+                "leader",
+                "b",
+                "d",
+                "w"
+            ]
         },
         {
             "before": [
@@ -128,7 +173,7 @@
                 }
             ]
         },
-{
+        {
             "before": [
                 "leader",
                 "k"
@@ -144,9 +189,19 @@
                     "args": []
                 }
             ]
+        },
+        {
+            "before": [
+                "p",
+            ],
+            "after": [
+                "p",
+                "g",
+                "v",
+                "y"
+            ]
         }
     ],
-    "files.encoding": "windows1254",
     "cmake.configureOnOpen": true,
     "window.zoomLevel": 0,
     "terminal.integrated.rendererType": "dom",
@@ -158,26 +213,57 @@
     "explorer.autoReveal": false,
     "problems.autoReveal": false,
     "workbench.editor.revealIfOpen": true,
-    "editor.lineNumbers": "relative",
     "vim.foldfix": true,
     "vim.sneak": true,
     "vim.sneakUseIgnorecaseAndSmartcase": true,
-    "java.home": "C:\\Program Files\\Java\\jdk1.8.0_151",
+    "java.home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home",
     "files.exclude": {
-        "**/.git": true,         // this is a default value
-        "**/.DS_Store": true,    // this is a default value
-
-        "**/node_modules": true, // this excludes all folders 
-                                 // named "node_modules" from 
-                                 // the explore tree
-
-        // alternative version
-        "node_modules": true    // this excludes the folder 
-                                // only from the root of
-                                // your workspace 
+        "**/.externalNativeBuild": true,
+        "**/freetype": true,
+        "**/lib": true,
+        "**/make-netbeans": true,
+        "**/openssl": true,
+        "make-vs2008": true,
+        "make-vs2013": true,
+        "TAGS": true,
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/*.meta": true,
+        "library/": true,
+        "local/": true,
+        "temp/": true
     },
-    "editor.fontSize": 14,
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/bower_components": true,
+        "build/": true,
+        "temp/": true,
+        "library/": true,
+        "**/*.anim": true
+    },
+    "editor.fontFamily": "Monaco",
+    "terminal.integrated.shell.windows": "C:\\PortableGit-2.19.2-64\\bin\\bash.exe",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "monaco",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "C_Cpp.updateChannel": "Insiders",
+    "editor.lineHeight": 19,
+    "editor.fontSize": 13,
+    "editor.letterSpacing": 0.2,
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "liveServer.settings.donotVerifyTags": true,
+    "editor.parameterHints.enabled": false,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "java.configuration.checkProjectSettingsExclusions": false,
     "workbench.colorCustomizations": {
-    },
-    "cmake-tools-helper.cmake_download_path": "/Users/cihangir/.vscode/extensions/maddouri.cmake-tools-helper-0.2.1/cmake_download"
-} 
+        "statusBar.background": "#005f5f",
+        "statusBar.noFolderBackground": "#005f5f",
+        "statusBar.debuggingBackground": "#005f5f"
+    }
+}
