@@ -47,6 +47,11 @@
     },
     {
         "key": "alt+n",
+        "command": "-editor.action.goToDeclaration",
+        "when": "editorTextFocus && editorLangId == 'javascriptreact'"
+    },
+     {
+        "key": "alt+n",
         "command": "-C_Cpp.Navigate",
         "when": "editorTextFocus && editorLangId == 'c'"
     },
