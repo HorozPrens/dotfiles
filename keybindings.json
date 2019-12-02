@@ -1,6 +1,26 @@
 // Place your key bindings in this file to overwrite the defaults
 [
     {
+        "key": "ctrl+w j",
+        "command": "workbench.action.focusBelowGroup",
+    },
+    {
+        "key": "ctrl+w k",
+        "command": "workbench.action.focusAboveGroup",
+    },
+    {
+        "key": "ctrl+w h",
+        "command": "workbench.action.focusLeftGroup",
+    },
+    {
+        "key": "ctrl+w l",
+        "command": "workbench.action.focusRightGroup",
+    },
+    {
+        "key": "ctrl+w down",
+        "command": "workbench.action.moveActiveEditorGroupDown",
+    },
+    {
         "key": "ctrl+m",
         "command": "-editor.action.toggleTabFocusMode"
     },

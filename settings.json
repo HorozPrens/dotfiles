@@ -8,8 +8,11 @@
     "vim.hlsearch": true,
     "vim.surround": true,
     "vim.camelCaseMotion.enable": true,
-    "vim.statusBarColorControl": true,
-
+    "vim.handleKeys": {
+        "<C-c>": false,
+        "<C-v>": false,
+        "<C-x>": false,
+    },
     "vim.insertModeKeyBindings": [
         {
             "before": [
@@ -216,7 +219,6 @@
     "vim.foldfix": true,
     "vim.sneak": true,
     "vim.sneakUseIgnorecaseAndSmartcase": true,
-    "java.home": "/Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home",
     "files.exclude": {
         "**/.externalNativeBuild": true,
         "**/freetype": true,
@@ -248,8 +250,8 @@
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "C_Cpp.updateChannel": "Insiders",
-    "editor.lineHeight": 19,
-    "editor.fontSize": 13,
+    "editor.lineHeight": 18,
+    "editor.fontSize": 12,
     "editor.letterSpacing": 0.2,
     "[cpp]": {
         "editor.defaultFormatter": "ms-vscode.cpptools"
