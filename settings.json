@@ -267,5 +267,7 @@
         "statusBar.background": "#005f5f",
         "statusBar.noFolderBackground": "#005f5f",
         "statusBar.debuggingBackground": "#005f5f"
-    }
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    //"flow.pathToFlow": "${flowconfigDir}/node_modules/.bin/flow"
 }

@@ -40,6 +40,7 @@
 
 (require-package 'scratch)
 
+(require 'init-use-package)
 (require 'init-osx)
 (require 'init-evil)
 (require 'init-evil-leader)
@@ -52,7 +53,7 @@
 (require 'init-helm-ag)
 (require 'init-ag)
 
-(require 'init-theme)
+;;(require 'init-theme)
 (require 'init-switch-window)
 (require 'init-code-folding)
 (require 'init-expand-region)
@@ -83,6 +84,7 @@
 (require 'init-c-mode)
 (require 'init-lorem-ipsum)
 (require 'init-rjsx-mode)
+(require 'init-doom-themes)
 
 (require 'init-global-keys)
 

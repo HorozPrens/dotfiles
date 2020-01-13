@@ -4,7 +4,7 @@
 ;; (load-theme 'dracula t)
 
 
-(require 'doom-themes)
+(maybe-require-package 'doom-themes)
 
 ;; Global settings (defaults)
 (setq doom-themes-enable-bold t    ; if nil, bold is universally disabled
