@@ -33,5 +33,9 @@
 (with-eval-after-load 'company
   (setq company-backends (mapcar #'company-mode/backend-with-yas company-backends))) )
 
+(use-package react-snippets
+  :ensure t )
+  
+
 
 (provide 'init-yasnippet)

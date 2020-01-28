@@ -29,6 +29,7 @@ current buffer directory."
 	    (setq neo-window-fixed-size nil)
 	    (setq neo-smart-open t)
 	    (setq fit-window-to-buffer-horizontally t)
+	    (define-key evil-normal-state-local-map (kbd "R") 'neotree-refresh)
 	    (define-key evil-normal-state-local-map (kbd "TAB") 'neotree-enter)
 	    (define-key evil-normal-state-local-map (kbd "q") 'neotree-hide)
 	    (define-key evil-normal-state-local-map (kbd "RET") 'neotree-enter)))

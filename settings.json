@@ -269,5 +269,6 @@
         "statusBar.debuggingBackground": "#005f5f"
     },
     "javascript.updateImportsOnFileMove.enabled": "always",
+    "python.jediEnabled": false,
     //"flow.pathToFlow": "${flowconfigDir}/node_modules/.bin/flow"
 }

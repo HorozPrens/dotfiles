@@ -28,6 +28,9 @@
       ;; Force SSL for GNU ELPA
       (setcdr (assoc "gnu" package-archives) "https://elpa.gnu.org/packages/"))))
 
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
 
 ;;; On-demand installation of packages
 
@@ -107,6 +110,7 @@ locate PACKAGE."
       (sanityinc/set-tabulated-list-column-width "Archive" longest-archive-name))))
 
 (add-hook 'package-menu-mode-hook 'sanityinc/maybe-widen-package-menu-columns)
+
 
 
 (provide 'init-elpa)

@@ -85,6 +85,7 @@
 (require 'init-lorem-ipsum)
 (require 'init-rjsx-mode)
 (require 'init-doom-themes)
+(require 'init-yaml-mode)
 
 (require 'init-global-keys)
 
