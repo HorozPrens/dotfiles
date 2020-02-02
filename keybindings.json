@@ -57,6 +57,10 @@
         "command": "workbench.action.navigateBack"
     },
     {
+        "key": "cmd+p",
+        "command": "workbench.action.navigateBack"
+    },
+    {
         "key": "alt+left",
         "command": "-workbench.action.navigateBack"
     },
@@ -86,6 +90,11 @@
         "when": "editorTextFocus && editorLangId == 'cpp'"
     },
     {
+        "key": "cmd+n",
+        "command": "editor.action.goToDeclaration",
+        "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+    },
+     {
         "key": "alt+n",
         "command": "editor.action.goToDeclaration",
         "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
@@ -133,7 +142,22 @@
         "command": "workbench.action.files.save"
     },
     {
-        "key": "ctrl+s",
-        "command": "-workbench.action.files.save"
+        "key": "cmd+s",
+        "command": "workbench.action.files.save"
+    },
+    {
+        "key": "enter",
+        "command": "-acceptSelectedSuggestion",
+        "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+    },
+    {
+        "key": "enter",
+        "command": "-acceptSelectedSuggestion",
+        "when": "acceptSuggestionOnEnter && suggestWidgetVisible && suggestionMakesTextEdit && textInputFocus"
+    },
+    {
+        "key": "cmd+m",
+        "command": "-acceptSelectedSuggestion",
+        "when": "suggestWidgetVisible && textInputFocus"
     }
 ]

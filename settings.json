@@ -162,6 +162,21 @@
         {
             "before": [
                 "leader",
+                "m"
+            ],
+            "after": [],
+            "commands": [
+                {
+                    "command" : "workbench.action.files.openFile",
+                    "args": []
+                }
+            ]
+        },
+
+
+        {
+            "before": [
+                "leader",
                 "q"
             ],
             "after": [],
@@ -270,5 +285,11 @@
     },
     "javascript.updateImportsOnFileMove.enabled": "always",
     "python.jediEnabled": false,
+    "remote.extensionKind": {
+        "ms-azuretools.vscode-docker": "workspace"
+    },
+    "editor.acceptSuggestionOnEnter": "off",
+    "files.autoSave": "onFocusChange",
+    "editor.find.autoFindInSelection": "always",
     //"flow.pathToFlow": "${flowconfigDir}/node_modules/.bin/flow"
 }

@@ -10,45 +10,41 @@ nmap go o<ESC>k
 nmap g<C-o> O<ESC>j
 
 nnoremap <F5> :GundoToggle<CR>
-
 nmap <F2> :!start explorer /e,%:p:h<CR>
 
-"inoremap jj <Esc>   """ jj key is <Esc> setting
 
-let mapleader=","
-noremap <leader>d :NERDTreeToggle<CR>
-
+let mapleader=" "
+:autocmd InsertEnter * set timeoutlen=150
+:autocmd InsertLeave * set timeoutlen=1000   
+                     
+ 
 nnoremap <leader>f :CtrlP<CR>
 nnoremap <leader>b :CtrlPBuffer<CR>
-nnoremap <leader>s :CtrlPLine<CR>
-
+nnoremap <leader>i :CtrlPLine<CR>
 nnoremap <leader>t :TagbarToggle<CR>
-
 nnoremap <leader>u :GundoToggle<CR>
+nnoremap <leader>k :bd<CR>
 
-noremap <leader>ev :e ~/dotfiles/.vimrc<CR>
+
+noremap  <leader>ev :e ~/dotfiles/.vimrc<CR>
 nnoremap <leader>sv  :source $MYVIMRC<cr>
 nmap <silent> <Leader>ig <Plug>IndentGuidesToggle
 
 "nnoremap ;; A;<c-m><esc>
-inoremap <Leader><Space> <esc>A;<esc>
+inoremap <Leader><Space> <esc>A;<esc>,
 inoremap <Leader><Space> <esc>A,
 nnoremap <Leader><Space> <esc>A,<esc>
 
 "inoremap {{ <esc>A{<c-m>}<esc><S-o>
 inoremap [<Space> <esc>A{<c-m>}<esc><S-o>
 
-inoremap jk <esc>
 inoremap jj <esc>
 inoremap <Ctrl-C> <Nop> 
 
 "
 "inoremap <leader>w <esc>:w<cr>i
-inoremap <leader>w <esc>:w<cr>
-nnoremap <leader>w :w<cr>
-
-inoremap jk <esc>
-inoremap <Ctrl-C> <Nop> 
+inoremap <leader>s <esc>:w<cr>
+nnoremap <leader>s :w<cr>
 
 inoremap {{ <esc>A{<c-m>}<esc><S-o>
 "nnoremap <leader>r :call RunCtagsCommand()<cr>
@@ -67,19 +63,15 @@ nnoremap <leader>a :Ag<cr>
 :cnoremap <Esc>f <S-Right>
 :cnoremap <Esc>d <S-right><Delete>
 :cnoremap <C-g>  <C-c>
-      
-" go lang mappings
-au FileType go nmap <leader>gr <Plug>(go-run)
-au FileType go nmap <leader>gb <Plug>(go-build)
-au FileType go nmap <leader>gt <Plug>(go-test)
-au FileType go nmap <leader>gc <Plug>(go-coverage)
+:cnoremap <M-g>  <C-g>
 
-au FileType go nmap <Leader>ds <Plug>(go-def-split)
-au FileType go nmap <Leader>dv <Plug>(go-def-vertical)
-au FileType go nmap <Leader>dt <Plug>(go-def-tab)
-au FileType go nmap <Leader>go <Plug>(go-doc)
+"nerdtree for mac
+nmap <D-d> :NERDTreeToggle<CR>
+nmap <D-m> <CR>
+nmap <D-j> <C-j>
+nmap <D-k> <C-k>
 
-au FileType go nmap <Leader>gn <Plug>(go-rename)
-au FileType go nmap <Leader>gi <Plug>(go-info)
-au FileType go nmap <Leader>gm <Plug>(go-implements)
+nnoremap <D-i> :CtrlPLine<CR>
+nnoremap <D-g> <esc>
 
+:nnoremap <leader>w <C-w>

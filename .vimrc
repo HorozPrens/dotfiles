@@ -4,11 +4,31 @@ syntax on
 filetype plugin indent on
 
 
+call plug#begin('~/.vim/plugged')
+    Plug 'liuchengxu/vim-clap'
+" Build the extra binary if cargo exists on your system.
+    Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
+" The bang version will try to download the prebuilt binary if cargo does not exist.
+    Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
+
+    Plug 'pangloss/vim-javascript'
+    Plug 'mxw/vim-jsx'
+
+    Plug 'ctrlpvim/ctrlp.vim'
+"    set rtp+=/usr/local/opt/fzf
+"    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+"    Plug 'junegunn/fzf.vim'
+    Plug 'preservim/nerdtree'
+    Plug 'majutsushi/tagbar'
+     
+call plug#end()
+
+
 source ~/dotfiles/mappings.vim 
 source ~/dotfiles/settings.vim 
-source ~/dotfiles/tab.vim 
+source ~/dotfiles/golang.vim 
 
-if $SHELL=='/usr/local/bin/fish'
+"if $SHELL=='/usr/local/bin/fish'
   set shell=/bin/sh
-endif
+"endif
 

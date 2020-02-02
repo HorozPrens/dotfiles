@@ -20,9 +20,10 @@ let g:airline_theme = 'badwolf'
 let g:airline#extensions#tabline#enabled = 1
 set nowrap 
 hi VertSplit       ctermfg=244 ctermbg=232   cterm=bold
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/venv
 let g:ctrlp_custom_ignore = {
-	\ 'dir':  '\v[\/]\.(git|hg|svn)$|node_modules|bower_components',
-	\ 'file': '\v\.(exe|so|dll|o|obj|d|map)$',
+	\ 'dir':  '\v[\/]\.(git|hg|svn)$\|node_modules\|bower_components\|venv',
+	\ 'file': '\v\.(exe\|so\|dll\|o\|obj\|d\|map)$',
 	\ }
 
 "some font settings
@@ -51,5 +52,14 @@ if has("gui_win32")
     let g:tagbar_ctags_bin = 'C:\ctags\ctags.exe'
 endif
 
-"let g:go_fmt_command = "goimports"
+
+"clap
+" `:Clap quick_open` to open some dotfiles quickly.
+let g:clap_provider_quick_open = {
+      \ 'source': ['~/.vimrc', '~/.spacevim', '~/.bashrc', '~/projects/webprojects/note-2020', '~/dotfiles'],
+      \ 'sink': 'e',
+      \ }
+
+set autochdir
+
 
