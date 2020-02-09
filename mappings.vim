@@ -14,7 +14,7 @@ nmap <F2> :!start explorer /e,%:p:h<CR>
 
 
 let mapleader=" "
-:autocmd InsertEnter * set timeoutlen=150
+:autocmd InsertEnter * set timeoutlen=250
 :autocmd InsertLeave * set timeoutlen=1000   
                      
  
@@ -31,9 +31,9 @@ nnoremap <leader>sv  :source $MYVIMRC<cr>
 nmap <silent> <Leader>ig <Plug>IndentGuidesToggle
 
 "nnoremap ;; A;<c-m><esc>
-inoremap <Leader><Space> <esc>A;<esc>,
-inoremap <Leader><Space> <esc>A,
-nnoremap <Leader><Space> <esc>A,<esc>
+"inoremap <Leader><Space> <esc>A;<esc>,
+"inoremap <Leader><Space> <esc>A,
+"nnoremap <Leader><Space> <esc>A,<esc>
 
 "inoremap {{ <esc>A{<c-m>}<esc><S-o>
 inoremap [<Space> <esc>A{<c-m>}<esc><S-o>
@@ -48,8 +48,11 @@ nnoremap <leader>s :w<cr>
 
 inoremap {{ <esc>A{<c-m>}<esc><S-o>
 "nnoremap <leader>r :call RunCtagsCommand()<cr>
+inoremap <D-m>  <cr>
 
-nnoremap <leader>a :Ag<cr>
+
+
+nnoremap <leader>a :Ack<cr>
 
 
 :cnoremap <C-a>  <Home>
@@ -71,7 +74,10 @@ nmap <D-m> <CR>
 nmap <D-j> <C-j>
 nmap <D-k> <C-k>
 
-nnoremap <D-i> :CtrlPLine<CR>
-nnoremap <D-g> <esc>
 
-:nnoremap <leader>w <C-w>
+nnoremap <D-i> :CtrlPLine<CR>
+
+nnoremap <leader>w <C-w>
+
+
+

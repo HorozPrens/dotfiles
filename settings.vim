@@ -61,5 +61,7 @@ let g:clap_provider_quick_open = {
       \ }
 
 set autochdir
+set number
+map <D-g> <esc>
 
 

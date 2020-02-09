@@ -12,3 +12,6 @@ alias emacs "/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 #set -gx DYLD_LIBRARY_PATH $DYLD_LIBRARY_PATH  /Users/cihangir/projects/c++libs/boost_1_61_0/build/lib
 #set -gx DYLD_LIBRARY_PATH $DYLD_LIBRARY_PATH  /Users/cihangir/projects/c++libs/poco/poco-1.7.3-all/lib/Darwin/x86_64
 set -gx PATH $PATH /Users/cihangir/node-v10.13.0/bin
+set -gx PATH $PATH /Users/cihangir/nvim-osx64/bin
+set -gx XDG_CONFIG_HOME /Users/cihangir/dotfiles
+

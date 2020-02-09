@@ -1,3 +1,9 @@
+:echo 'hello from nvim'
+
+:nmap <D-g> :echo 'cancel me'
+:imap <D-g> :echo 'cancel me'
+
+
 execute pathogen#infect()
 call pathogen#helptags()
 syntax on
@@ -12,10 +18,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary!' }
 
     Plug 'pangloss/vim-javascript'
-    "Plug 'mxw/vim-jsx'
-
-    Plug 'yuezk/vim-js'
-    Plug 'maxmellon/vim-jsx-pretty'
+    Plug 'mxw/vim-jsx'
 
     Plug 'ctrlpvim/ctrlp.vim'
 "    set rtp+=/usr/local/opt/fzf
@@ -23,10 +26,7 @@ call plug#begin('~/.vim/plugged')
 "    Plug 'junegunn/fzf.vim'
     Plug 'preservim/nerdtree'
     Plug 'majutsushi/tagbar'
-    Plug 'preservim/nerdcommenter'     
-
-    Plug 'mileszs/ack.vim'
-
+     
 call plug#end()
 
 
