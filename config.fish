@@ -14,4 +14,5 @@ alias emacs "/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
 set -gx PATH $PATH /Users/cihangir/node-v10.13.0/bin
 set -gx PATH $PATH /Users/cihangir/nvim-osx64/bin
 set -gx XDG_CONFIG_HOME /Users/cihangir/dotfiles
+set -x FZF_DEFAULT_COMMAND 'ag -l --nogroup  --nocolor --hidden -g ""'
 

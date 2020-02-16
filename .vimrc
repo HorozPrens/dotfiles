@@ -17,15 +17,21 @@ call plug#begin('~/.vim/plugged')
     Plug 'yuezk/vim-js'
     Plug 'maxmellon/vim-jsx-pretty'
 
-    Plug 'ctrlpvim/ctrlp.vim'
+    "Plug 'ctrlpvim/ctrlp.vim'
 "    set rtp+=/usr/local/opt/fzf
-"    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-"    Plug 'junegunn/fzf.vim'
+    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+    Plug 'junegunn/fzf.vim'
+
     Plug 'preservim/nerdtree'
     Plug 'majutsushi/tagbar'
     Plug 'preservim/nerdcommenter'     
 
     Plug 'mileszs/ack.vim'
+
+    Plug 'haya14busa/is.vim'
+
+    Plug 'tpope/vim-vinegar'
+    
 
 call plug#end()
 
