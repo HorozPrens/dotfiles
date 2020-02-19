@@ -93,11 +93,11 @@ nnoremap <leader>bb :buffers<cr>:b<space>
 nnoremap <leader>% :%s/\<<c-r><c-w>\>//g<left><left>
 
 "autoclose tags
-inoremap ( ()<Left>
-inoremap { {}<Left>
-inoremap [ []<Left>
-inoremap " ""<Left>
-inoremap ' ''<Left>
+"inoremap ( ()<Left>
+"inoremap { {}<Left>
+"inoremap [ []<Left>
+"inoremap " ""<Left>
+"inoremap ' ''<Left>
 
 
 "create a new buffer (save it with :w ./path/to/FILENAME)
@@ -121,8 +121,8 @@ nnoremap <leader>b :Buffers<cr>
 let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git -g ""'
 
 " enable i and j key during autocomplete
-inoremap <expr> j ((pumvisible())?("\<C-n>"):("j"))
-inoremap <expr> k ((pumvisible())?("\<C-p>"):("k"))
+"inoremap <expr> j ((pumvisible())?("\<C-n>"):("j"))
+"inoremap <expr> k ((pumvisible())?("\<C-p>"):("k"))
 
 "inoremap { {<CR>}<Esc>O<TAB>
 

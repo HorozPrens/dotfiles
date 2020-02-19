@@ -31,6 +31,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'haya14busa/is.vim'
 
     Plug 'tpope/vim-vinegar'
+
+    Plug 'jiangmiao/auto-pairs'
     
 
 call plug#end()
